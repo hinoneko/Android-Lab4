@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/card_dark">
+
+    <View
+        android:layout_width="45dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center"
+        android:background="@color/text_secondary"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Network Stream"
+        android:textColor="@color/text_main"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Paste MP4 or MP3 link"
+        android:textColor="@color/text_main"
+        android:textColorHint="@color/text_secondary"
+        android:backgroundTint="@color/accent_main" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnStream"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="Start Playback"
+        android:backgroundTint="@color/accent_main"
+        android:textColor="@color/bg_dark"
+        app:cornerRadius="16dp" />
+</LinearLayout>
